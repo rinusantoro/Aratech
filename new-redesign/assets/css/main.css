@@ -4691,13 +4691,14 @@ section,
 
   .custom-cursor {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--accent-color);
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.2s ease;
+    mix-blend-mode: difference;
   }
 
   .cursor-dot {
