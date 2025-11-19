@@ -294,23 +294,6 @@
     document.querySelector(".progress-bar").style.width = scrollPercent + "%";
   });
 
-  // Custom Cursor
-  if (window.innerWidth >= 992) {
-    const cursor = document.createElement("div");
-    const cursorDot = document.createElement("div");
-    cursor.className = "custom-cursor";
-    cursorDot.className = "cursor-dot";
-    document.body.appendChild(cursor);
-    document.body.appendChild(cursorDot);
-
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX - 10 + "px";
-      cursor.style.top = e.clientY - 10 + "px";
-      cursorDot.style.left = e.clientX - 3 + "px";
-      cursorDot.style.top = e.clientY - 3 + "px";
-    });
-  }
-
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();

@@ -4683,42 +4683,6 @@ section,
   }
 }
 
-/* Custom Cursor */
-@media (min-width: 992px) {
-  body {
-    cursor: none;
-  }
-
-  .custom-cursor {
-    position: fixed;
-    width: 24px;
-    height: 24px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.2s ease;
-    mix-blend-mode: difference;
-  }
-
-  .cursor-dot {
-    position: fixed;
-    width: 6px;
-    height: 6px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s ease;
-  }
-
-  a:hover ~ .custom-cursor,
-  button:hover ~ .custom-cursor {
-    transform: scale(1.5);
-    background: color-mix(in srgb, var(--accent-color), transparent 50%);
-  }
-}
-
 @media (max-width: 768px) {
   .partners-slider-wrapper {
     padding: 0 20px;
