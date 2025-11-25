@@ -161,7 +161,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  height: 85px;
+  width: auto;
+  object-fit: contain;
   margin-right: 8px;
 }
 
