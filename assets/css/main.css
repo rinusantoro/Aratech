@@ -4671,6 +4671,29 @@ section,
   transition: width 0.3s ease;
 }
 
+.contact-item-sidebar {
+  display: flex;
+  align-items: flex-start; /* icon & text sejajar */
+  gap: 16px; /* jarak icon dan text */
+  margin-bottom: 20px;
+}
+
+.contact-icon-sidebar {
+  font-size: 24px;
+  color: var(--accent-color, #007bff);
+  line-height: 1; /* biar icon tidak turun */
+}
+
+.contact-content-sidebar h5 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.contact-content-sidebar p,
+.contact-content-sidebar a {
+  margin: 0;
+}
+
 /* Mobile responsive */
 @media (max-width: 1199px) {
   .theme-toggle-wrapper {
